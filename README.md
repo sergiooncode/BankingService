@@ -1,3 +1,5 @@
+# Installation instruction
+
 - Open Eclipse or Spring Tool Suite (STS), click on File > Import and on Maven source select Existing Maven Projects. Browse choosing the BankingService folder as the Root Directory. Click Finish.
 
 - Right button while being on top of the project on Package Explorer view and click on Run As > Maven build ... Insert 'clean install' in Goals, apply and run.
