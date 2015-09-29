@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.serpear.banking.model">
+    <class name="Transaction" table="transactions">
+        <id name="transactionId" column="transaction_id">
+            <generator class="sequence">
+   				<param name="sequence">transaction_id_sequence</param>
+			</generator>
+        </id>
+        <property name="accountId" column="account_id" />
+        <property name="transactionAmount" column="transaction_amount" />
+    </class> 
+</hibernate-mapping>
